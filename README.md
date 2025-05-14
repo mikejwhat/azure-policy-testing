@@ -1,4 +1,4 @@
-![test-policies](https://github.com/mikejwhat/workflows/test-policies/badge.svg)
+[![test-policies](https://github.com/mikejwhat/azure-policy-testing/actions/workflows/test-policies.yml/badge.svg)](https://github.com/mikejwhat/azure-policy-testing/actions/workflows/test-policies.yml)
 
 # Testing Azure Policy
 
