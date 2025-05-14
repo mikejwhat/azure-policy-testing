@@ -210,7 +210,7 @@ As you can see, we can combine Pester and Azure PowerShell to conveniently test 
 - **Asynchronously** evaluated
 - **Asynchronously** evaluated with **remediation task** support
 
-Policy effects, which are **synchronously** evaluated are *Append*, *Deny* and *Modify* (See: [Deny-Route-NextHopVirtualAppliance](./policies/Deny-Route-NextHopVirtualAppliance.json)). Basically, the policies already take effect during the PATCH/PUT request. Testing them with Azure PowerShell is quiet straightforward and basically just performing a PATCH/PUT request like creating a route (See: [Deny-Route-NextHopVirtualAppliance.Tests.ps1](./tests/Deny-Route-NextHopVirtualAppliance.Tests.ps1)):
+Policy effects, which are **synchronously** evaluated are *Append*, *Deny* and *Modify* (See: [Deny-Route-NextHopVirtualAppliance](./policies/Deny-Route-NextHopVirtualAppliance.json)). Basically, the policies already take effect during the PATCH/PUT request. Testing them with Azure PowerShell is quite straightforward and basically just performing a PATCH/PUT request like creating a route (See: [Deny-Route-NextHopVirtualAppliance.Tests.ps1](./tests/Deny-Route-NextHopVirtualAppliance.Tests.ps1)):
 
 ```powershell
 Context "When route is created or updated" -Tag "deny-route-nexthopvirtualappliance-route-create-update" {
@@ -494,7 +494,7 @@ function Complete-PolicyRemediation {
 
 >Please note, that *Modify* can be evaluated both **synchronously** and **asynchronously**. 
 
-As you can see, the combination of Pester, Azure PowerShell and GitHub Actions is quiet powerful and convenient for testing Azure Policy. In the next chapter, we will describe how to setup this repository with your GitHub account using your Azure environment, so you can further explore it.
+As you can see, the combination of Pester, Azure PowerShell and GitHub Actions is quite powerful and convenient for testing Azure Policy. In the next chapter, we will describe how to setup this repository with your GitHub account using your Azure environment, so you can further explore it.
 
 ## Setup
 ### Folder Structure
